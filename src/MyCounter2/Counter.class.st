@@ -15,17 +15,23 @@ Counter >> count [
 
 { #category : 'accessing' }
 Counter >> count: a [
-	count := a
+	count := a 
+	
 ]
 
 { #category : 'accessing' }
 Counter >> decrement [
 	count := count - 1 .
-	^ count 
+	
 ]
 
 { #category : 'accessing' }
 Counter >> increment [
 	count := count + 1.
-	^ count 
+	
+]
+
+{ #category : 'initialization' }
+Counter >> initialize [ 
+	count := 0
 ]
